@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HB Mail 개인정보처리방침</title>
+<style>
+  :root { --text: #1a1a1a; --muted: #5f6b7a; --brand: #24387B; --line: #e3e7ee; --bg: #ffffff; }
+  @media (prefers-color-scheme: dark) {
+    :root { --text: #e8eaee; --muted: #a3acb9; --brand: #9fb3e8; --line: #2c333d; --bg: #15181d; }
+  }
+  body { margin: 0; background: var(--bg); color: var(--text);
+         font: 15px/1.7 -apple-system, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 48px 16px 64px; }
+  h1 { color: var(--brand); font-size: 28px; margin: 0 0 4px; }
+  h2 { color: var(--brand); font-size: 19px; margin: 40px 0 8px; padding-top: 16px; border-top: 1px solid var(--line); }
+  p.lead { color: var(--muted); margin: 0 0 24px; }
+  li { margin: 4px 0; }
+  .en { color: var(--muted); font-size: 14px; }
+  a { color: var(--brand); }
+</style>
+</head>
+<body>
+<main>
+  <h1>HB Mail</h1>
+  <p class="lead">개인용 macOS 메일 앱 · A personal mail client for macOS</p>
+
+  <p>HB Mail은 개인이 자신의 Mac에서 쓰려고 만든 메일 앱입니다.
+  기존 메일 서버에 연결해 메일을 읽고 보냅니다. 앱 스토어에 배포하지 않으며 다른 사람에게 서비스를 제공하지 않습니다.</p>
+  <p class="en">HB Mail is a personal mail client made for the developer's own Mac.
+  It connects to existing mail servers to read and send mail. It is not distributed or offered as a service to others.</p>
+
+  <h2 id="privacy">개인정보처리방침 · Privacy Policy</h2>
+
+  <p><strong>구글 드라이브 사용 (대용량 첨부)</strong><br>
+  메일 서버가 받지 못하는 큰 첨부파일을 보낼 때, 사용자가 직접 고른 파일만 사용자의 구글 드라이브
+  "HB Mail 대용량 첨부" 폴더에 올리고, 메일에 넣을 공유 링크를 만듭니다.</p>
+  <ul>
+    <li>요청하는 권한은 <code>drive.file</code>(이 앱이 올린 파일만 보고 고칠 수 있음)과 계정 주소 확인(email)뿐입니다. 드라이브의 다른 파일은 볼 수 없습니다.</li>
+    <li>구글 로그인 정보(토큰)는 사용자의 Mac 키체인에만 저장됩니다.</li>
+    <li>메일, 파일, 계정 정보를 개발자나 다른 서버로 보내지 않습니다. HB Mail에는 별도의 서버가 없습니다.</li>
+    <li>구글 API로 받은 정보는 위의 기능에만 쓰며, 광고·판매·다른 목적에 쓰지 않습니다. (Google API Services User Data Policy의 Limited Use 요건을 따릅니다.)</li>
+    <li>설정 → 대용량 첨부의 "연결 해제"로 언제든 연결을 끊을 수 있고, <a href="https://myaccount.google.com/permissions">Google 계정 → 타사 앱 접근</a>에서도 권한을 취소할 수 있습니다.</li>
+  </ul>
+
+  <p class="en"><strong>Google Drive (large attachments).</strong> When an attachment is too large for the mail server,
+  HB Mail uploads only the file the user chooses to the user's own Google Drive folder "HB Mail 대용량 첨부" and creates a share link
+  to place in the mail. It requests only the <code>drive.file</code> scope (files created by this app) and the email scope.
+  Tokens are stored only in the user's macOS Keychain. No mail, file, or account data is sent to the developer or any other server;
+  HB Mail has no server of its own. Data received from Google APIs is used only for this feature and complies with the
+  Google API Services User Data Policy, including the Limited Use requirements. Access can be revoked at any time in the app
+  or at <a href="https://myaccount.google.com/permissions">Google Account permissions</a>.</p>
+
+  <p><strong>메일 데이터</strong><br>
+  메일과 첨부파일은 사용자의 Mac에만 저장됩니다. 메일 계정 비밀번호는 Mac 키체인에만 저장됩니다.</p>
+  <p class="en"><strong>Mail data.</strong> Mail and attachments are stored only on the user's Mac. Mail account passwords are stored only in the macOS Keychain.</p>
+</main>
+</body>
+</html>
